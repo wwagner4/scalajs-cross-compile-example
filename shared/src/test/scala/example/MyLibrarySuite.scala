@@ -2,7 +2,7 @@ package example
 
 import utest._
 
-object CoreSuite extends TestSuite {
+object MyLibrarySuite extends TestSuite {
 
     def tests = TestSuite {
         s"test some sqs 3" - {

@@ -1,11 +1,5 @@
 package example
 
-class MyJvmLibrary extends MyLibrary with MySleeper {
-  override def sleep(ms: Int) = {
-    Thread.sleep(ms)
-  }
-}
-
 object Main {
   def main(args: Array[String]): Unit = {
     println(s"Using a JVM version ${System.getProperty("java.vm.version")}")
