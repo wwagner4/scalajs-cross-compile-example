@@ -14,7 +14,7 @@ lazy val root = project.in(file(".")).
     version := fooVersion, 
   )
 
-lazy val foo = crossProject(JSPlatform, JVMPlatform).in(file(".")).
+lazy val foo = crossProject(JSPlatform, JVMPlatform).in(file("core")).
   settings(
     name := "foo",
     organization := "example",
