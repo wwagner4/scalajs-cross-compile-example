@@ -9,4 +9,11 @@ class MyLibrary {
     val sqs = values.map(v => sq(v))
     sqs.mkString("--")
   }
+
+
 }
+
+trait MySleeper {
+  def sleep(ms: Int): Unit
+}
+
