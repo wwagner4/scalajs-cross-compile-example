@@ -1,9 +1,5 @@
 package example
 
-import scala.concurrent.ExecutionContext.Implicits.global
-import scala.concurrent.Future
-import scala.concurrent.Promise
-
 import scala.scalajs.js.Date
 
 class MyJsLibrary extends MyLibrary with MySleeper {
@@ -13,4 +9,3 @@ class MyJsLibrary extends MyLibrary with MySleeper {
     while (Date.now() < start + ms) {}
   }
 }
-

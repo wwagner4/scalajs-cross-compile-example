@@ -1,4 +1,7 @@
 ThisBuild / scalaVersion := "2.13.13"
+ThisBuild / semanticdbEnabled := true
+ThisBuild / semanticdbVersion := scalafixSemanticdb.revision
+
 lazy val utestVersion = "0.8.2"
 lazy val scalaJsJqueryVersion = "1.0.0"
 lazy val fooVersion = "0.1-SNAPSHOT"
@@ -21,6 +24,7 @@ lazy val foo = crossProject(JSPlatform, JVMPlatform).in(file("core")).
     version := fooVersion, 
     testFrameworks += new TestFramework("utest.runner.Framework"),
     scalacOptions ++= Seq(
+      "-Ywarn-unused",
       // "-deprecation",
     )                     
 

@@ -10,10 +10,8 @@ class MyLibrary {
     sqs.mkString("--")
   }
 
-
 }
 
 trait MySleeper {
   def sleep(ms: Int): Unit
 }
-
